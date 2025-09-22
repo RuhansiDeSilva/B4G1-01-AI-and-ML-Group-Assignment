@@ -20,29 +20,29 @@ This project aims to predict the placement status of graduate students based on 
 
 To prepare the dataset for machine learning models, the following preprocessing steps were applied:
 
-### 1. Label Encoding - IT24100425 - Udayanga D A D N 
-- **Purpose:** Convert categorical variables with ordinal relationships into numerical format.
-- **Implementation:** Applied to fields such as 'Field of Study' to assign integer values representing different categories.
-
-### 2. One-Hot Encoding - IT24100387 - De Zoysa T.N.D 
-- **Purpose:** Transform categorical variables without ordinal relationships into a binary matrix.
-- **Implementation:** Applied to 'Country of Origin' and 'Destination Country' to create binary columns for each category.
-
-### 3. Outlier Removal - IT24100548 - Galagama S.T 
+### 1. Outlier Removal - IT24100548 - Galagama S.T 
 - **Purpose:** Eliminate data points that significantly differ from other observations to improve model accuracy.
 - **Implementation:** Used statistical methods (e.g., IQR, Z-score) to identify and remove outliers in numerical features like 'Academic Performance'.
 
-### 4. Principal Component Analysis (PCA) - IT24100514 - Ahamed M.M.S 
-- **Purpose:** Reduce the dimensionality of the dataset while retaining most of the variance.
-- **Implementation:** Applied PCA to the dataset to transform features into a smaller set of uncorrelated components.
+### 2. Label Encoding - IT24100425 - Udayanga D A D N 
+- **Purpose:** Convert categorical variables with ordinal relationships into numerical format.
+- **Implementation:** Applied to fields such as 'Field of Study' to assign integer values representing different categories.
+
+### 3. One-Hot Encoding - IT24100387 - De Zoysa T.N.D 
+- **Purpose:** Transform categorical variables without ordinal relationships into a binary matrix.
+- **Implementation:** Applied to 'Country of Origin' and 'Destination Country' to create binary columns for each category.
+
+### 4. Feature Engineering - IT24100391 - De Silva T R S 
+- **Purpose:** Create new features or select important ones to improve model accuracy.
+- **Implementation:** Derived new metrics from existing features and applied feature selection to reduce irrelevant variables.
 
 ### 5. Scaling / Normalization - IT24103804 - Rijiwan M. F.
 - **Purpose:** Standardize the range of numerical features to improve model performance.
 - **Implementation:** Applied Min-Max scaling to features such as 'Academic Performance' to normalize the data.
 
-### 6. Feature Engineering - IT24100391 - De Silva T R S 
-- **Purpose:** Create new features or select important ones to improve model accuracy.
-- **Implementation:** Derived new metrics from existing features and applied feature selection to reduce irrelevant variables.
+### 6. Principal Component Analysis (PCA) - IT24100514 - Ahamed M.M.S 
+- **Purpose:** Reduce the dimensionality of the dataset while retaining most of the variance.
+- **Implementation:** Applied PCA to the dataset to transform features into a smaller set of uncorrelated components.
 
 ##  How to Run the Code
 
