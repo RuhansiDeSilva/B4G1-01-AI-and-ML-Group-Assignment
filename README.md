@@ -20,23 +20,27 @@ This project aims to predict the placement status of graduate students based on 
 
 To prepare the dataset for machine learning models, the following preprocessing steps were applied:
 
-### 1. Outlier Removal - IT24100548 - Galagama S.T 
+### 1. Handling Missing Data – IT24100391 - De Silva T R S 
+-**Purpose:** Address gaps in the dataset to ensure consistency and avoid errors during model training. Missing values can negatively impact algorithms and lead to biased predictions.
+-**Implementation:** Applied techniques such as mean/median imputation for numerical columns, mode imputation for categorical variables, and removal of rows/columns with excessive missing values where appropriate.
+
+### 2. Outlier Removal - IT24100548 - Galagama S.T 
 - **Purpose:** Eliminate data points that significantly differ from other observations to improve model accuracy.
 - **Implementation:** Used statistical methods (e.g., IQR, Z-score) to identify and remove outliers in numerical features like 'Academic Performance'.
 
-### 2. Label Encoding - IT24100425 - Udayanga D A D N 
+### 3. Label Encoding - IT24100425 - Udayanga D A D N 
 - **Purpose:** Convert categorical variables with ordinal relationships into numerical format.
 - **Implementation:** Applied to fields such as 'Field of Study' to assign integer values representing different categories.
 
-### 3. One-Hot Encoding - IT24100387 - De Zoysa T.N.D 
+### 4. One-Hot Encoding - IT24100387 - De Zoysa T.N.D 
 - **Purpose:** Transform categorical variables without ordinal relationships into a binary matrix.
 - **Implementation:** Applied to 'Country of Origin' and 'Destination Country' to create binary columns for each category.
 
-### 4. Feature Engineering - IT24100391 - De Silva T R S 
+### 5. Feature Engineering - IT24100391 - De Silva T R S 
 - **Purpose:** Create new features or select important ones to improve model accuracy.
 - **Implementation:** Derived new metrics from existing features and applied feature selection to reduce irrelevant variables.
 
-### 5. Scaling / Normalization - IT24103804 - Rijiwan M. F.
+### 6. Scaling / Normalization - IT24103804 - Rijiwan M. F.
 - **Purpose:** Standardize the range of numerical features to improve model performance.
 - **Implementation:** Applied Min-Max scaling to features such as 'Academic Performance' to normalize the data.
 
@@ -45,4 +49,8 @@ To prepare the dataset for machine learning models, the following preprocessing 
 - **Implementation:** Applied PCA to the dataset to transform features into a smaller set of uncorrelated components.
 
 ##  How to Run the Code
-
+1. Open the notebook in **jupyter notebook**.
+2. Upload the dataset file `global_student_migration.csv` when prompted.  
+3. Run all cells in order. The notebook will execute the full preprocessing pipeline.
+4. At each stage, the notebook generates **EDA visualizations** (bar charts, boxplots, heatmaps, scatterplots, PCA plots) and prints logs about the dataset shape and transformations.  
+5. After execution, the final processed dataset is available in the DataFrame `Data_pca_df` for immediate use in further analysis or model training.  
