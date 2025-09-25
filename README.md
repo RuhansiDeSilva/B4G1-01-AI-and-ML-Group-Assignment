@@ -36,15 +36,15 @@ To prepare the dataset for machine learning models, the following preprocessing 
 - **Purpose:** Transform categorical variables without ordinal relationships into a binary matrix.
 - **Implementation:** Applied to 'Country of Origin' and 'Destination Country' to create binary columns for each category.
 
-### 5. Feature Engineering - IT24100391 - De Silva T R S 
-- **Purpose:** Create new features or select important ones to improve model accuracy.
-- **Implementation:** Derived new metrics from existing features and applied feature selection to reduce irrelevant variables.
-
-### 6. Scaling / Normalization - IT24103804 - Rijiwan M. F.
+### 5. Scaling / Normalization - IT24103804 - Rijiwan M. F.
 - **Purpose:** Standardize the range of numerical features to improve model performance.
 - **Implementation:** Applied Min-Max scaling to features such as 'Academic Performance' to normalize the data.
 
-### 6. Principal Component Analysis (PCA) - IT24100514 - Ahamed M.M.S 
+### 6. Feature Engineering - IT24100391 - De Silva T R S 
+- **Purpose:** Create new features or select important ones to improve model accuracy.
+- **Implementation:** Derived new metrics from existing features and applied feature selection to reduce irrelevant variables.
+
+### 7. Principal Component Analysis (PCA) - IT24100514 - Ahamed M.M.S 
 - **Purpose:** Reduce the dimensionality of the dataset while retaining most of the variance.
 - **Implementation:** Applied PCA to the dataset to transform features into a smaller set of uncorrelated components.
 
