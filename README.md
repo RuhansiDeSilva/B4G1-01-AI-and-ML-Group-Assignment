@@ -20,9 +20,9 @@ This project aims to predict the placement status of graduate students based on 
 
 To prepare the dataset for machine learning models, the following preprocessing steps were applied:
 
-### 1. Handling Missing Data – IT24100391 - De Silva T R S 
--**Purpose:** Address gaps in the dataset to ensure consistency and avoid errors during model training. Missing values can negatively impact algorithms and lead to biased predictions.
--**Implementation:** Applied techniques such as mean/median imputation for numerical columns, mode imputation for categorical variables, and removal of rows/columns with excessive missing values where appropriate.
+### 1. Handling Missing Data - IT24100391 - De Silva T R S  
+- **Purpose:** Address gaps in the dataset to ensure consistency and avoid errors during model training. Missing values can negatively impact algorithms and lead to biased predictions.
+- **Implementation:** Applied techniques such as mean/median imputation for numerical columns, mode imputation for categorical variables, and removal of rows/columns with excessive missing values where appropriate.
 
 ### 2. Outlier Removal - IT24100548 - Galagama S.T 
 - **Purpose:** Eliminate data points that significantly differ from other observations to improve model accuracy.
