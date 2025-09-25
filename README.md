@@ -9,7 +9,7 @@ This project aims to predict the placement status of graduate students based on 
 - **Source:** [Global Student Migration & Higher Education Trends](https://www.kaggle.com/datasets/atharvasoundankar/global-student-migration-and-higher-education-trends)
 - **Size:** 5,000 international students
 - **Timeframe:** Data from 2019 to 2023
-- **Features Include:**
+- **Features Include:** 20 Features
   - Country of origin
   - Destination country
   - Field of study
